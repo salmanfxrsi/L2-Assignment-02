@@ -62,3 +62,8 @@ SELECT common_name FROM species
 WHERE species_id NOT IN (
     SELECT DISTINCT species_id FROM sightings
 );
+
+-- Problem 7:
+UPDATE species 
+SET conservation_status = 'Historic'
+WHERE discovery_date < '1825-01-01';
