@@ -69,6 +69,14 @@ WHERE species_id NOT IN (
     SELECT DISTINCT species_id FROM sightings
 );
 
+-- Problem 6:
+SELECT sp.common_name, s.sighting_time, r.name
+FROM sightings s
+JOIN species sp USING (species_id)
+JOIN rangers r USING (ranger_id)
+ORDER BY s.sighting_time DESC
+LIMIT 2;
+
 -- Problem 7:
 UPDATE species 
 SET conservation_status = 'Historic'
