@@ -6,9 +6,9 @@ CREATE TABLE rangers (
 );
 
 INSERT INTO rangers (name, region) VALUES
-('David Stone', 'Emerald Forest'),
-('Eva Brook', 'Sunset Canyon'),
-('Liam Cole', 'Crystal Lake');
+('Alice Green', 'Northern Hills'),
+('Bob White', 'River Delta'),
+('Carol King', 'Mountain Range');
 
 -- Table 2: Species
 CREATE TABLE species (
@@ -20,11 +20,10 @@ CREATE TABLE species (
 );
 
 INSERT INTO species (common_name, scientific_name, discovery_date, conservation_status) VALUES
-('Bengal Tiger', 'Panthera tigris tigris', '1800-04-15', 'Endangered'),
-('Red Panda', 'Ailurus fulgens', '1825-07-21', 'Vulnerable'),
-('Humpback Whale', 'Megaptera novaeangliae', '1756-08-03', 'Least Concern'),
-('Orangutan', 'Pongo pygmaeus', '1835-12-02', 'Critically Endangered'),
-('Arctic Fox', 'Vulpes lagopus', '1792-05-18', 'Least Concern');
+('Snow Leopard', 'Panthera uncia', '1775-01-01', 'Endangered'),
+('Bengal Tiger', 'Panthera tigris tigris', '1758-01-01', 'Endangered'),
+('Red Panda', 'Ailurus fulgens', '1825-01-01', 'Vulnerable'),
+('Asiatic Elephant', 'Elephas maximus indicus', '1758-01-01', 'Endangered');
 
 -- Table 3: Sightings
 CREATE TABLE sightings (
@@ -37,10 +36,10 @@ CREATE TABLE sightings (
 );
 
 INSERT INTO sightings (species_id, ranger_id, location, sighting_time, notes) VALUES
-(1, 1, 'Tiger Creek Trail', '2024-07-01 06:20:00', 'Two tigers near water'),
-(2, 2, 'Redleaf Ridge', '2024-07-02 09:10:00', 'Red panda climbing tree'),
-(3, 3, 'Wave Bay Lookout', '2024-07-03 11:00:00', 'Humpback breaching'),
-(4, 1, 'Canopy Cliff', '2024-07-04 07:40:00', 'Orangutan seen feeding in trees');
+(1, 1, 'Peak Ridge', '2024-05-10 07:45:00', 'Camera trap image captured'),
+(2, 2, 'Bankwood Area', '2024-05-12 16:20:00', 'Juvenile seen'),
+(3, 3, 'Bamboo Grove East', '2024-05-15 09:10:00', 'Feeding observed'),
+(1, 2, 'Snowfall Pass', '2024-05-18 18:30:00', NULL);
 
 
 
