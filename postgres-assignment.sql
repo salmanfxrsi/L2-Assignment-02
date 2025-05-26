@@ -41,3 +41,11 @@ INSERT INTO sightings (species_id, ranger_id, location, sighting_time, notes) VA
 (2, 2, 'Redleaf Ridge', '2024-07-02 09:10:00', 'Red panda climbing tree'),
 (3, 3, 'Wave Bay Lookout', '2024-07-03 11:00:00', 'Humpback breaching'),
 (4, 1, 'Canopy Cliff', '2024-07-04 07:40:00', 'Orangutan seen feeding in trees');
+
+
+
+SELECT * FROM sightings;
+
+
+-- Problem 1: 
+INSERT INTO rangers(name , region) VALUES('Derek Fox', 'Coastal plains');
