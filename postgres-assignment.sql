@@ -56,3 +56,9 @@ FROM sightings;
 
 -- Problem 3:
 SELECT * FROM sightings WHERE location ILIKE '%Pass%';
+
+-- Problem 5:
+SELECT common_name FROM species
+WHERE species_id NOT IN (
+    SELECT DISTINCT species_id FROM sightings
+);
