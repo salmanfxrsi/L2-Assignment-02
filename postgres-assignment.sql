@@ -49,3 +49,6 @@ SELECT * FROM sightings;
 
 -- Problem 1: 
 INSERT INTO rangers(name , region) VALUES('Derek Fox', 'Coastal plains');
+
+-- Problem 3:
+SELECT * FROM sightings WHERE location ILIKE '%Pass%';
